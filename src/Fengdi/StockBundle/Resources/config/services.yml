@@ -1,0 +1,4 @@
+services:
+#    fengdi_stock.example:
+#        class: Fengdi\StockBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
