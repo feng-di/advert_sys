@@ -5,6 +5,7 @@ namespace OC\PlatformBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use OC\PlatformBundle\Entity\Advert;
+use OC\PlatformBundle\Form\AdvertType;
 
 class AdvertController extends Controller
 {
@@ -78,6 +79,11 @@ class AdvertController extends Controller
             ->add('save',      'submit')
         ;
         $form = $formBuilder->getForm();
+        
+        
+        // use form type
+//         $advert = new Advert();
+//         $form = $this->get('form.factory')->create(new AdvertType(), $advert);
         
         
         // On passe la méthode createView() du formulaire à la vue
